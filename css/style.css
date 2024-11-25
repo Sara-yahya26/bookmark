@@ -1,0 +1,50 @@
+h1{
+    font-family: 
+    Pacifico
+    ;
+    font-size: 50px;
+    font-weight: 500;
+    border-bottom: dotted 2px;
+    position: relative;
+
+}
+h1::after{
+    height: 20px;
+    position: absolute;
+    content: "";
+    background-color: rgb(254, 194, 96);
+    width: 280px;
+    left: 38%;
+    bottom: 35%;
+    z-index: -1;
+    transition: 0.3s;
+
+}
+h1:hover::after{
+    height: 30px;
+    background-color: rgb(254, 194, 96);
+    width: 280px;
+    left: 38%;
+    bottom: 35%;
+}
+
+
+
+body{
+    background-color: #f7ecde;
+}
+h2{
+    font-family: 
+    Righteous;
+    font-size: 25px;
+    color: rgb(64, 165, 91);
+}
+button{
+    background-color: rgba(187, 65, 32) !important;
+
+}
+
+div .btn-submit{
+    border-bottom: dotted black 2px; 
+
+}

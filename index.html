@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+    <h1 class="text-center p-5">Bookmarker</h1>
+    <h2 class="text-center py-3"> <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2> 
+    <div class="mb-3">
+        <label for="Site Name " class="form-label "> <i class="fa-solid fa-memory"></i>   Site Name</label>
+
+        <input oninput="Validation(this)" type="email" class="form-control" id="siteName" placeholder="Bookmark Name">
+        <div  class="alert alert-danger my-3 py-1 d-none">must start with three letters</div>
+
+      </div>
+      <div class="mb-3">
+        <div class="mb-3">
+            <label for="Site URL" class="form-label"> <i class="fa-solid fa-link"></i>   Site URL</label>
+            <input   oninput="Validation(this)" type="email" class="form-control" id="siteURL" placeholder="Website URL">
+            <div  class="alert alert-danger my-3 py-1 d-none">Must supports protocols like http, https, ftp, etc.</div>
+
+    
+      </div>
+      <div class="text-center btn-submit">
+      <button onclick="addSite()" type="submit" class="btn text-white px-5 mb-3">Submit</button>
+    </div>
+      <div class="container bg-white p-2 text-center mt-4">
+        <div class="row" >
+            <div class="col-md-3">
+<p class=" bg-white fw-bold">Index</p>
+ </div>
+            <div class="col-md-3">
+                <p class=" bg-white fw-bold">Website Name</p>
+            </div>
+            <div class="col-md-3">
+                <p class=" bg-white fw-bold">Visit</p>
+            </div>
+            <div class="col-md-3">
+                <p class="bg-white fw-bold">Delete</p>
+            </div>
+         
+        </div>
+        <div class="row" id="site"></div>
+
+      </div>
+     
+      <script src="index.js"></script>
+</div>
+</body>
+</html>
